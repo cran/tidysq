@@ -6,6 +6,11 @@
 
 using namespace Rcpp;
 
+#ifdef RCPP_USE_GLOBAL_ROSTREAM
+Rcpp::Rostream<true>&  Rcpp::Rcout = Rcpp::Rcpp_cout_get();
+Rcpp::Rostream<false>& Rcpp::Rcerr = Rcpp::Rcpp_cerr_get();
+#endif
+
 // CPP_apply_R_function
 Rcpp::List CPP_apply_R_function(const Rcpp::List& x, const Rcpp::Function& fun, const bool& single_string, const tidysq::Letter& NA_letter);
 RcppExport SEXP _tidysq_CPP_apply_R_function(SEXP xSEXP, SEXP funSEXP, SEXP single_stringSEXP, SEXP NA_letterSEXP) {
@@ -385,7 +390,7 @@ BEGIN_RCPP
 END_RCPP
 }
 
-RcppExport SEXP run_testthat_tests();
+RcppExport SEXP run_testthat_tests(SEXP use_xml_sxp);
 
 static const R_CallMethodDef CallEntries[] = {
     {"_tidysq_CPP_apply_R_function", (DL_FUNC) &_tidysq_CPP_apply_R_function, 4},
