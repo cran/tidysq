@@ -1,1 +1,0 @@
-CMakeLists.txt not found in /home/rafaczd/tidysqverse/tidysq/src Select CMakeLists.txt

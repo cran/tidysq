@@ -1,6 +1,6 @@
-75d7a80cb5561db241fc186cf0b55b8d *DESCRIPTION
+379172a39a999266230e6676fe18727d *DESCRIPTION
 7a697a117aaf8bf5023e172c9c9ee9c8 *NAMESPACE
-fbe228d2da1d36cc128d684fad282eb0 *NEWS.md
+3fd1a22cd181818c07dd968ccbb5baca *NEWS.md
 7a8c7f6943ebdb8dbbd06d2bd9f301de *R/RcppExports.R
 e94927c554e90d71ef5bf707b0d346f3 *R/alphabet.R
 3b727cef1b8e70ab7cdc22250bb3d7fb *R/bite.R
@@ -8,7 +8,7 @@ d47626fe8b60ff849a98b06c2861c9ae *R/catch-routine-registration.R
 de02e79d600b83a2f14097c901dd272e *R/collapse.R
 c15a8ef3c76ee31451d958b4f7803769 *R/complement.R
 c40b8613e64b51c85f6b45c6c72d3488 *R/doc-sq-class.R
-5c90cf3f72b6c17c5e1542ef42b21102 *R/doc-tidysq.R
+f237a97690b219d74897273600732518 *R/doc-tidysq.R
 3f1d60bbbb4e87647bfdfe62372a0ae2 *R/export_sq.R
 fb5c7a6f2fb9499e34c2bcb8398024a6 *R/find_invalid_letters.R
 29f7ca95ac7fe92132997c9c2e64a4f5 *R/find_motifs.R
@@ -40,15 +40,15 @@ bc877ae82e44e7913a427f55f67565a6 *R/util-vctrs-names.R
 d5fe3cecebbc98c96ff11315ca78eba8 *R/util-vctrs-prototypes.R
 d1496d63b4955d18a31eed138f5f0d24 *R/write_fasta.R
 ad392318d0af9bdb59655c4e98d3429f *R/zzz.R
-9810f2fee695c3bb849b9a1f4388beac *README.md
-d652f63de6308af6766bcacf15c8e0de *build/vignette.rds
+44e1bebb9a93dc52b20d4bbbaa1516d5 *README.md
+e62079a4c395ca9bd656e5e9413080dc *build/vignette.rds
 d05afe9304999433bdd09070897c9014 *inst/WORDLIST
 c74642eb336fdac64053c7cb200099cf *inst/doc/advanced-alphabet.R
 84f6182229d2d5c6be76c689dc6944b1 *inst/doc/advanced-alphabet.Rmd
 d7539d4a3f2dbcbbbd36380f7df5326a *inst/doc/advanced-alphabet.html
 f2fe248907311ab9b4051ad35dd857ed *inst/doc/quick-start.R
 a8400f317afb41d583a50210e6c182c0 *inst/doc/quick-start.Rmd
-be8fe56237f4f05a307e9bc76795f25e *inst/doc/quick-start.html
+67259c98e5049bb10158ab03e67c9bd7 *inst/doc/quick-start.html
 fd73d68a82a937f688392d22aed84e58 *inst/examples/example_aa.fasta
 3ff2ad0263e031055d3da0ea1934fc4a *inst/include/tidysq.h
 ec9897fd20aa0836aeac5d3bd6cb30fa *inst/include/tidysq/Alphabet.h
@@ -58,7 +58,7 @@ ec9897fd20aa0836aeac5d3bd6cb30fa *inst/include/tidysq/Alphabet.h
 5b0ad404ddfe2b69bf96f12e3e60310b *inst/include/tidysq/Proxy.h
 b5bbcf5a85b144abdd224c0a0fc4bcd5 *inst/include/tidysq/Rcpp-export.h
 73b0c23b188064cdfea376bf4a3c0e5a *inst/include/tidysq/Rcpp-import.h
-937c02a8c665e3b383f9728a7cd65c67 *inst/include/tidysq/Sequence.h
+063a7bdf4756401b60640601ed447099 *inst/include/tidysq/Sequence.h
 c2c400363fb4c1c098206f171eb7b9b2 *inst/include/tidysq/Sq.h
 acf0bc88e2d20145a39c44ad1b42dd2e *inst/include/tidysq/collapse.h
 1b2d591b0c16e2554e839ea775a18097 *inst/include/tidysq/constants/WarningLevel.h
@@ -160,7 +160,7 @@ cf55d615c423936da077f32fe3791412 *man/sq_type.Rd
 2b97a51735ba28167bf6c94aca5dd161 *man/sqextract.Rd
 bbf8a27dc480ee3828a01572d3ec5971 *man/sqprint.Rd
 f8a1e215cd1aff5c96255f1c8bbdf2dc *man/substitute_letters.Rd
-1335a3e600bb541b34232e9bfa446848 *man/tidysq-package.Rd
+f078ce6db4f2964a7a3bcd93d3fabd71 *man/tidysq-package.Rd
 3a361f334ecab84358ec8f14b3a795de *man/translate.Rd
 7f22776fb2bbf355e26ea1e94a031361 *man/typify.Rd
 39b30543a71934fd64d4a4c4172a6f08 *man/write_fasta.Rd
@@ -169,7 +169,6 @@ f8a1e215cd1aff5c96255f1c8bbdf2dc *man/substitute_letters.Rd
 b641099895960ba744f157ba768be0fc *src/RcppExports.cpp
 06e874b08a378a807f09c10f98023902 *src/apply_R_function.cpp
 f83315f456b4a2b9d4f5c97d10d8029e *src/bite.cpp
-59df67f797063caf62897b2736eb21b7 *src/cmake-build-debug/CMakeFiles/clion-log.txt
 be1915d255343896ab83a38d1183df6a *src/collapse.cpp
 936e345d163416875a3dd05ad5b8df2d *src/complement.cpp
 2f082df8567d1cdbfc0bb72275e93170 *src/find_invalid_letters.cpp
