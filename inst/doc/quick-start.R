@@ -1,4 +1,4 @@
-## ---- include = FALSE---------------------------------------------------------
+## ----include = FALSE----------------------------------------------------------
 knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
@@ -48,14 +48,24 @@ sq_dna[sq_dna %has% c("AG", "CC")]
 ## ----sq_find_motifs-----------------------------------------------------------
 find_motifs(sq_dna, c("seq1", "seq2", "rev1", "rev2"), c("ATC", "TAG"))
 
+## ----sqibble_find_motifs------------------------------------------------------
+sqibble <- tibble::tibble(sq = sq_dna, 
+                          name = c("seq1", "seq2", "rev1", "rev2"))
+
+# does the same as the call from previous chunk of code
+find_motifs(sqibble, c("ATC", "TAG"))
+
 ## ----sq_find_motifs_amb-------------------------------------------------------
-find_motifs(sq_dna, c("seq1", "seq2", "rev1", "rev2"), "GNCC")
+find_motifs(sqibble, "GNCC")
 
 ## ----sq_find_motifs_start_end-------------------------------------------------
-find_motifs(sq_dna, c("seq1", "seq2", "rev1", "rev2"), c("^TAG", "ATN$"))
+find_motifs(sqibble, c("^TAG", "ATN$"))
 
 ## ----write_fasta, eval=FALSE--------------------------------------------------
 #  write_fasta(sq_dna,
 #              c("seq1", "seq2", "rev1", "rev2"),
+#              "just_your_ordinary_fasta_file.fasta")
+#  # or
+#  write_fasta(sqibble,
 #              "just_your_ordinary_fasta_file.fasta")
 

@@ -1,16 +1,20 @@
 # SETUP ----
-sq_dna <- sq(c("TACTGGGCATGA", "CAGGTCGGA", "TAGTAGTCC", "ACGGTG"),
+sq_dna <- sq(c("TACTGGGCATGA", "CAGGTCGGA", "TAGTAGTCC", "ACGGTG",
+               "TTTTTCTTATTGTCTTCCTCATCGTATTACTAATAGTGTTGCTGATGGCTTCTCCTACTGCCTCCCCCACCGCATCACCAACAGCGTCGCCGACGGATTATCATAATGACTACCACAACGAATAACAAAAAGAGTAGCAGAAGGGTTGTCGTAGTGGCTGCCGCAGCGGATGACGAAGAGGGTGGCGGAGGG"),
              alphabet = "dna_bsc")
 sq_dna_2 <- sq(c("TACTGGGCATG", "CAGGTCGGA", "TAGTAGTCCG", "", "ACGGT"),
                alphabet = "dna_bsc")
 sq_rna <- sq(c("UGGCGG", "ACGGUUUCGUU", "UGGAACG", "GGCUCGACAGACUGC", ""),
              alphabet = "rna_bsc")
 
-str_dna_translated <- c("YWA*", "QVG", "**S", "TV")
-str_dna_translated_4 <- c("YWAW", "QVG", "**S", "TV")
+str_dna_translated <- c("YWA*", "QVG", "**S", "TV",
+                        "FFLLSSSSYY**CC*WLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG")
+str_dna_translated_4 <- c("YWAW", "QVG", "**S", "TV",
+                          "FFLLSSSSYY**CCWWLLLLPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG")
 str_dna_2_translated_31 <- c("YWA", "QVG", "EES", "", "T")
 str_dna_2_translated_31_as_stop <- c("YWA", "QVG", "**S", "", "T")
-str_dna_translated_12 <- c("YWA*", "QVG", "**S", "TV")
+str_dna_translated_12 <- c("YWA*", "QVG", "**S", "TV",
+                           "FFLLSSSSYY**CC*WLLLSPPPPHHQQRRRRIIIMTTTTNNKKSSRRVVVVAAAADDEEGGGG")
 str_rna_translated <- c("WR", "TVS", "WN", "GSTDC", "")
 
 # SQ_AMI_BSC PROTOTYPE ----
@@ -27,12 +31,13 @@ test_that("translate() returns clean amino acid sq object", {
 })
 
 # ERROR FOR NON-DNA/RNA OBJECTS ----
-test_that("translate() throws an error whenever passed object of class other that sq_dna/sq_rna", {
-  expect_error(translate(19:8))
-  expect_error(translate(list(mean, sum, sd)))
-  expect_error(translate(LETTERS))
+test_sq_only(translate)
+
+test_that("only DNA and RNA sequences are accepted", {
   expect_error(translate(sq(character(), "ami_bsc")))
-  expect_error(translate(sq(c("accmsce", "auprcacc"), alphabet = c("auprc", "acc", "msce"))))
+  expect_error(translate(
+    sq(c("accmsce", "auprcacc"), alphabet = c("auprc", "acc", "msce"))
+  ))
 })
 
 # VALUE COMPUTATION ----

@@ -27,7 +27,7 @@ test_that("substitute_letters() returns an object with trimmed alphabet attribut
   expect_setequal(
     alphabet(substitute_letters(sq_ami, c(P = "Q", O = "W", I = "E", U = "R", Y = "T", G = "V",
                                           L = "A", K = "S", J = "D", H = "F", M = "Z", N = "X", B = "C"))),
-    setdiff(alphabet(sq_ami), c("P", "O", "I", "U", "Y", "G", "L", "K", "J", "H", "M", "N", "B"))
+    setdiff(as.character(alphabet(sq_ami)), c("P", "O", "I", "U", "Y", "G", "L", "K", "J", "H", "M", "N", "B"))
   )
 })
 
@@ -52,11 +52,7 @@ test_that("substitute_letters() keep original_lengths unchanged", {
 })
 
 # ARGUMENT PREREQUISITES ----
-test_that("substitute_letters() throws an error whenever passed object of class other that sq", {
-  expect_error(substitute_letters(1:7, c(S = "H")))
-  expect_error(substitute_letters(LETTERS, c(S = "SH", H = "HS")))
-  expect_error(substitute_letters(list(mean, sum, sd), c(`mean` = "Aix")))
-})
+test_sq_only(substitute_letters, encoding = c(S = "H"))
 
 test_that("encoding must be either numeric or character", {
   expect_error(substitute_letters(sq_dna, c(A = TRUE, T = FALSE)),

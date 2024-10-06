@@ -6,7 +6,6 @@
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/tidysq)](https://cran.r-project.org/package=tidysq)
 [![Github Actions Build
 Status](https://github.com/BioGenies/tidysq/workflows/R-CMD-check-bioc/badge.svg)](https://github.com/BioGenies/tidysq/actions)
-[![codecov.io](https://codecov.io/github/BioGenies/tidysq/coverage.svg?branch=master)](https://codecov.io/github/BioGenies/tidysq?branch=master)
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 <!-- badges: end -->
@@ -17,11 +16,11 @@ experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](h
 sequences (including amino acid and nucleic acid – e.g. RNA, DNA –
 sequences). Two major features of this package are:
 
--   effective compression of sequence data, allowing to fit larger
-    datasets in **R**,
+- effective compression of sequence data, allowing to fit larger
+  datasets in **R**,
 
--   compatibility with most of `tidyverse` universe, especially `dplyr`
-    and `vctrs` packages, making analyses *tidier*.
+- compatibility with most of `tidyverse` universe, especially `dplyr`
+  and `vctrs` packages, making analyses *tidier*.
 
 ## Getting started
 
@@ -70,7 +69,7 @@ sqibble
 #>  8 VHPQKLVFF <15> AMY24|HABP2|Amyloid beta A4 peptide
 #>  9 VHHPKLVFF <15> AMY25|HABP3|Amyloid beta A4 peptide
 #> 10 VHHQPLVFF <15> AMY26|HABP4|Amyloid beta A4 peptide
-#> # … with 411 more rows
+#> # ℹ 411 more rows
 
 sq_ami <- sqibble$sq
 sq_ami
@@ -120,19 +119,19 @@ reverse(sq_ami)
 #> printed 10 out of 421
 
 # find_motifs() returns a whole tibble of useful informations
-find_motifs(sqibble$sq, sqibble$name, "^VHX")
+find_motifs(sqibble, "^VHX")
 #> # A tibble: 9 × 5
 #>   names                                found     sought start   end
 #>   <chr>                                <ami_bsc> <chr>  <int> <int>
-#> 1 AMY24|HABP2|Amyloid beta A4 peptide  VHP   <3> ^VHX       1     3
-#> 2 AMY25|HABP3|Amyloid beta A4 peptide  VHH   <3> ^VHX       1     3
-#> 3 AMY26|HABP4|Amyloid beta A4 peptide  VHH   <3> ^VHX       1     3
-#> 4 AMY34|HABP12|Amyloid beta A4 peptide VHH   <3> ^VHX       1     3
-#> 5 AMY35|HABP13|Amyloid beta A4 peptide VHH   <3> ^VHX       1     3
-#> 6 AMY36|HABP14|Amyloid beta A4 peptide VHH   <3> ^VHX       1     3
-#> 7 AMY38|HABP16|Amyloid beta A4 peptide VHH   <3> ^VHX       1     3
-#> 8 AMY43|AB5|Amyloid beta A4 peptide    VHH   <3> ^VHX       1     3
-#> 9 AMY195|86-95|Prion protein (human)   VHD   <3> ^VHX       1     3
+#> 1 AMY24|HABP2|Amyloid beta A4 peptide  VHP <3>   ^VHX       1     3
+#> 2 AMY25|HABP3|Amyloid beta A4 peptide  VHH <3>   ^VHX       1     3
+#> 3 AMY26|HABP4|Amyloid beta A4 peptide  VHH <3>   ^VHX       1     3
+#> 4 AMY34|HABP12|Amyloid beta A4 peptide VHH <3>   ^VHX       1     3
+#> 5 AMY35|HABP13|Amyloid beta A4 peptide VHH <3>   ^VHX       1     3
+#> 6 AMY36|HABP14|Amyloid beta A4 peptide VHH <3>   ^VHX       1     3
+#> 7 AMY38|HABP16|Amyloid beta A4 peptide VHH <3>   ^VHX       1     3
+#> 8 AMY43|AB5|Amyloid beta A4 peptide    VHH <3>   ^VHX       1     3
+#> 9 AMY195|86-95|Prion protein (human)   VHD <3>   ^VHX       1     3
 ```
 
 An example of `dplyr` integration:
@@ -156,7 +155,7 @@ sqibble %>%
 #>  8 VHHQEKLVF <16> AMY35|HABP13|Amyloid beta A4 peptide     16
 #>  9 VHHQEKLVF <16> AMY36|HABP14|Amyloid beta A4 peptide     16
 #> 10 KKLVFFAED  <9> AMY37|HABP15|Amyloid beta A4 peptide      9
-#> # … with 14 more rows
+#> # ℹ 14 more rows
 ```
 
 ## Citation

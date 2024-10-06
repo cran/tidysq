@@ -1,3 +1,21 @@
+# tidysq 1.2.1
+
+## Fixed:
+* fixed incorrect codons
+* add explicit casting of alphabet during construction of sequence prototype (fixes issues with new implementation of `union()`) 
+* add skips for tests that use not available packages from "Suggests"
+
+# tidysq 1.2.0
+## New features:
+* `write_fasta()` and `find_motifs()` accept `data.frame` arguments now; sequences and their names are taken from specified two columns
+* more descriptive error messages for non-existing generics that print out classes of the first parameter
+
+## Fixed:
+* return to automatically exported `Rcpp` catch declaration
+
+## Quality of code stuff:
+* added tests and adjusted vignettes for the changes
+
 # tidysq 1.1.3
 ## Fixed:
 * replaced deprecated use of `iterator`
