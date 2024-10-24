@@ -1,6 +1,6 @@
-fedacb8aaf2a1188e985280737bd5694 *DESCRIPTION
+c6397787fe79098e39e9223f89bbbf9d *DESCRIPTION
 27a1d6345b301b7c0db095b18b555dbc *NAMESPACE
-bf756264d93eba22e10131f7a8f5969a *NEWS.md
+b9099617886fc31201f147bf81e162ab *NEWS.md
 2486b74895ec9462b4b488ccf66b7172 *R/RcppExports.R
 a6853615bdf20d2872348dc81d1a31f1 *R/alphabet.R
 0e78537f0e0f601ed16f1639f3ef059a *R/bite.R
@@ -43,7 +43,7 @@ c74b64b673cd642be4b5ee914afe114e *R/write_fasta.R
 ad392318d0af9bdb59655c4e98d3429f *R/zzz.R
 1c2838bc8f319864a035d865182e75c2 *README.md
 16f8c4f52da0715f680b498a56405226 *build/vignette.rds
-d05afe9304999433bdd09070897c9014 *inst/WORDLIST
+e9eabaa344cf5b296c912390c16d6b1c *inst/WORDLIST
 33c9f6e406f6ef3fbc10f590e3529517 *inst/doc/advanced-alphabet.R
 84f6182229d2d5c6be76c689dc6944b1 *inst/doc/advanced-alphabet.Rmd
 c52dea582fbd37d34159a6e0e62733f2 *inst/doc/advanced-alphabet.html
@@ -55,12 +55,12 @@ fd73d68a82a937f688392d22aed84e58 *inst/examples/example_aa.fasta
 ec9897fd20aa0836aeac5d3bd6cb30fa *inst/include/tidysq/Alphabet.h
 18792b81c5226772211e5794e030c82a *inst/include/tidysq/ProtoSequence.h
 41f13fe17035ac4fbcd49432eb025c6d *inst/include/tidysq/ProtoSequenceInputInterpreter.h
-220e8dd64c0d5d7d04ea46c8809b4290 *inst/include/tidysq/ProtoSq.h
+f52f0efadafd479611285130f542b973 *inst/include/tidysq/ProtoSq.h
 5b0ad404ddfe2b69bf96f12e3e60310b *inst/include/tidysq/Proxy.h
 b5bbcf5a85b144abdd224c0a0fc4bcd5 *inst/include/tidysq/Rcpp-export.h
 73b0c23b188064cdfea376bf4a3c0e5a *inst/include/tidysq/Rcpp-import.h
 063a7bdf4756401b60640601ed447099 *inst/include/tidysq/Sequence.h
-c2c400363fb4c1c098206f171eb7b9b2 *inst/include/tidysq/Sq.h
+2f17b480ce8a904e265dcca4447df7b7 *inst/include/tidysq/Sq.h
 acf0bc88e2d20145a39c44ad1b42dd2e *inst/include/tidysq/collapse.h
 1b2d591b0c16e2554e839ea775a18097 *inst/include/tidysq/constants/WarningLevel.h
 ede219ca4ec2b17584847b39d68c8cd1 *inst/include/tidysq/constants/ambiguous_maps.h
@@ -97,7 +97,7 @@ b67ed038f271d7627d52977127077822 *inst/include/tidysq/ops/typify.h
 ed7b86693f500af1cea99b3f3ccb1eaa *inst/include/tidysq/ops/unpack.h
 b52c62f5976a346bf00ccec66db18027 *inst/include/tidysq/paste.h
 c558c60ead71350360aa8af59a575c63 *inst/include/tidysq/sq-types.h
-7fe667dba8d0cb49ec21bb7800108512 *inst/include/tidysq/sqapply.h
+420fa96f23409a3ff2f0324bb30b97ac *inst/include/tidysq/sqapply.h
 99057622ab65e1d39c583cdb0d2b8071 *inst/include/tidysq/tidysq-typedefs.h
 c08daaf34335cb4c84889910cd79169e *inst/include/tidysq/util/ResultWrapper.h
 24cf897eb85b41d553439896299ae7e4 *inst/include/tidysq/util/calculate_length.h
@@ -115,7 +115,7 @@ d41f6becc29189e7adb620142e7498ea *man/as.character.sq.Rd
 0b1a77373e284767d038f37bcd41f0e6 *man/collapse.Rd
 0e10dde1065784967083f26b47196db1 *man/complement.Rd
 95e6021a547a71b7da44a1eba5702f37 *man/equals-.sq.Rd
-1b4c5d119a9b4b0906a5aba3e045ad78 *man/export_sq.Rd
+b5c9873c1284223f656e551b7fcd1629 *man/export_sq.Rd
 cb1e46f469cfbbbde29c8b5113e1d789 *man/figures/lifecycle-archived.svg
 c0d2e5a54f1fa4ff02bf9533079dd1f7 *man/figures/lifecycle-defunct.svg
 a1b8c987c676c16af790f563f96cbb1f *man/figures/lifecycle-deprecated.svg
@@ -132,7 +132,7 @@ c3978703d8f40f2679795335715e98f4 *man/figures/lifecycle-experimental.svg
 86f05619c2b0115c9ea6ebe5f753e5c5 *man/get_standard_alphabet.Rd
 100de914f026536a001f1cf1cb74d929 *man/get_tidysq_options.Rd
 c657955fdb4bbdea7cc40726e1140ef4 *man/grapes-has-grapes.Rd
-a39bb56c276ad64433d8b2df6e8f0129 *man/import_sq.Rd
+163441ac068c515892d9331aa6f54733 *man/import_sq.Rd
 0aafaad4cfb88814035718d6e6dcd39d *man/is.sq.Rd
 044c3493e33b4c3b7432e97630450ed7 *man/is_empty_sq.Rd
 76d153d375eeb7748e3c1ca443f5ed6a *man/paste.Rd
@@ -169,7 +169,7 @@ f8a1e215cd1aff5c96255f1c8bbdf2dc *man/substitute_letters.Rd
 132d6832a340f42b21208a0d68c54d08 *man/write_fasta.Rd
 063bd348286c181608ad1944995ea0f1 *src/Makevars
 1696cd8c6e0410b3c7c0bf25a0868fb2 *src/Makevars.win
-c92fcd17d8b42bd436b52cc93793b6fc *src/RcppExports.cpp
+b641099895960ba744f157ba768be0fc *src/RcppExports.cpp
 06e874b08a378a807f09c10f98023902 *src/apply_R_function.cpp
 f83315f456b4a2b9d4f5c97d10d8029e *src/bite.cpp
 be1915d255343896ab83a38d1183df6a *src/collapse.cpp

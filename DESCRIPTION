@@ -1,8 +1,8 @@
 Package: tidysq
 Type: Package
 Title: Tidy Processing and Analysis of Biological Sequences
-Version: 1.2.1
-Date: 2024-09-29
+Version: 1.2.2
+Date: 2024-10-23
 Authors@R: c(person("Dominik", "Rafacz", 
            email = "dominikrafacz@gmail.com",
            comment = c(ORCID = "0000-0003-0925-1909"),
@@ -60,7 +60,7 @@ RoxygenNote: 7.3.2
 LinkingTo: Rcpp, testthat
 VignetteBuilder: knitr
 Config/testthat/edition: 3
-Packaged: 2024-10-06 21:59:34 UTC; Dominik
+Packaged: 2024-10-24 18:06:27 UTC; Dominik
 Author: Dominik Rafacz [cre, aut] (<https://orcid.org/0000-0003-0925-1909>),
   Michal Burdukiewicz [aut] (<https://orcid.org/0000-0001-8926-582X>),
   Laura Bakala [aut],
@@ -72,4 +72,4 @@ Author: Dominik Rafacz [cre, aut] (<https://orcid.org/0000-0003-0925-1909>),
   Filip Pietluch [ctb],
   Jaroslaw Chilimoniuk [ctb] (<https://orcid.org/0000-0001-5467-018X>)
 Maintainer: Dominik Rafacz <dominikrafacz@gmail.com>
-Date/Publication: 2024-10-06 22:30:02 UTC
+Date/Publication: 2024-10-24 18:40:02 UTC
