@@ -62,10 +62,10 @@ find_motifs(sqibble, "GNCC")
 find_motifs(sqibble, c("^TAG", "ATN$"))
 
 ## ----write_fasta, eval=FALSE--------------------------------------------------
-#  write_fasta(sq_dna,
-#              c("seq1", "seq2", "rev1", "rev2"),
-#              "just_your_ordinary_fasta_file.fasta")
-#  # or
-#  write_fasta(sqibble,
-#              "just_your_ordinary_fasta_file.fasta")
+# write_fasta(sq_dna,
+#             c("seq1", "seq2", "rev1", "rev2"),
+#             "just_your_ordinary_fasta_file.fasta")
+# # or
+# write_fasta(sqibble,
+#             "just_your_ordinary_fasta_file.fasta")
 

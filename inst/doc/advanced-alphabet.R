@@ -49,7 +49,9 @@ sq_sub
 typify(sq_sub, "rna_bsc")
 
 ## ----typify_fail, error=TRUE--------------------------------------------------
+try({
 typify(sq_sub, "dna_bsc")
+})
 
 ## ----find_invalid-------------------------------------------------------------
 find_invalid_letters(sq_sub, "dna_bsc")

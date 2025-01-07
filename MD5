@@ -1,8 +1,8 @@
-c6397787fe79098e39e9223f89bbbf9d *DESCRIPTION
+1da5effea2dd4f07021ea0429c7eaf6b *DESCRIPTION
 27a1d6345b301b7c0db095b18b555dbc *NAMESPACE
-b9099617886fc31201f147bf81e162ab *NEWS.md
+383c6e6198da2979530288de17ae9287 *NEWS.md
 2486b74895ec9462b4b488ccf66b7172 *R/RcppExports.R
-a6853615bdf20d2872348dc81d1a31f1 *R/alphabet.R
+055db63335722d3661ed159cc3ca2514 *R/alphabet.R
 0e78537f0e0f601ed16f1639f3ef059a *R/bite.R
 d47626fe8b60ff849a98b06c2861c9ae *R/catch-routine-registration.R
 90c7d0bedd6218811d203f143fa2959c *R/collapse.R
@@ -44,10 +44,10 @@ ad392318d0af9bdb59655c4e98d3429f *R/zzz.R
 1c2838bc8f319864a035d865182e75c2 *README.md
 16f8c4f52da0715f680b498a56405226 *build/vignette.rds
 e9eabaa344cf5b296c912390c16d6b1c *inst/WORDLIST
-33c9f6e406f6ef3fbc10f590e3529517 *inst/doc/advanced-alphabet.R
+d12dbc7f51f77e1dfb2e36dde95cad63 *inst/doc/advanced-alphabet.R
 84f6182229d2d5c6be76c689dc6944b1 *inst/doc/advanced-alphabet.Rmd
 c52dea582fbd37d34159a6e0e62733f2 *inst/doc/advanced-alphabet.html
-4f7a62556a1479017fa8983111e28b1d *inst/doc/quick-start.R
+a17265f776455013132ade501346b0bc *inst/doc/quick-start.R
 67f1f54c77aac17905aed716f892ddf5 *inst/doc/quick-start.Rmd
 d954e3eaa3cb407bf2bd13f261145ff7 *inst/doc/quick-start.html
 fd73d68a82a937f688392d22aed84e58 *inst/examples/example_aa.fasta
